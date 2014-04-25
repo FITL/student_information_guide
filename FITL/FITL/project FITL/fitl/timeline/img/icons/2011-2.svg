@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="140px" height="140px" viewBox="70 70 140 140" enable-background="new 70 70 140 140" xml:space="preserve">
+<g>
+	<circle fill="#3E91B4" cx="139.869" cy="140" r="56.333"/>
+	<g>
+		<path fill="#FBAF40" d="M155.919,120.946h-1.365c-0.205-3.208-2.807-5.614-5.994-5.614h-30.874c-3.188,0-5.79,2.406-5.995,5.614
+			H81.384v63.353h105.455v-63.353H155.919z"/>
+		<path fill="#F36D31" d="M148.345,122.951c0,3.321-2.881,6.015-6.201,6.015h-16.438c-3.32,0-5.826-2.693-5.826-6.015v-14.435
+			c0-3.322,0.899-3.208,4.222-3.208h18.043c3.322,0,6.201-0.114,6.201,3.208V122.951L148.345,122.951z"/>
+		<polygon fill="#FBAF40" points="112.938,108.917 134.11,95.083 155.282,108.917 		"/>
+		<g>
+			<circle fill="#F5F5F5" cx="134.11" cy="118.176" r="7.769"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" points="134.117,112.124 134.117,118.197 
+				136.717,121.313 			"/>
+		</g>
+		<g>
+			<rect x="87.598" y="133.776" fill="#F36D31" width="12.027" height="14.235"/>
+			<rect x="107.646" y="133.776" fill="#F36D31" width="12.029" height="14.235"/>
+			<rect x="127.694" y="133.776" fill="#F36D31" width="12.029" height="14.235"/>
+			<rect x="147.743" y="133.776" fill="#F36D31" width="12.029" height="14.235"/>
+			<rect x="167.791" y="133.776" fill="#F36D31" width="12.029" height="14.235"/>
+		</g>
+		<g>
+			<rect x="87.598" y="162.267" fill="#F36D31" width="12.027" height="14.234"/>
+			<rect x="107.646" y="162.267" fill="#F36D31" width="12.029" height="14.234"/>
+			<rect x="147.743" y="162.267" fill="#F36D31" width="12.029" height="14.234"/>
+			<rect x="167.791" y="162.267" fill="#F36D31" width="12.029" height="14.234"/>
+		</g>
+		<g>
+			<rect x="87.998" y="134.178" fill="#DADCD7" width="12.029" height="14.233"/>
+			<rect x="108.048" y="134.178" fill="#DADCD7" width="12.028" height="14.233"/>
+			<rect x="128.096" y="134.178" fill="#DADCD7" width="12.028" height="14.233"/>
+			<rect x="148.144" y="134.178" fill="#DADCD7" width="12.029" height="14.233"/>
+			<rect x="168.192" y="134.178" fill="#DADCD7" width="12.029" height="14.233"/>
+		</g>
+		<g>
+			<rect x="87.998" y="162.669" fill="#DADCD7" width="12.029" height="14.234"/>
+			<rect x="108.048" y="162.669" fill="#DADCD7" width="12.028" height="14.234"/>
+			<rect x="128.096" y="162.669" fill="#DADCD7" width="12.028" height="14.234"/>
+			<rect x="148.144" y="162.669" fill="#DADCD7" width="12.029" height="14.234"/>
+			<rect x="168.192" y="162.669" fill="#DADCD7" width="12.029" height="14.234"/>
+		</g>
+		<path fill="#6D736D" d="M140.107,162.722c-0.183-3.158-2.794-5.664-5.997-5.664s-5.813,2.506-5.997,5.664h-0.018v17.643h12.028
+			v-17.643H140.107z"/>
+		<rect x="123.484" y="180.327" fill="#F36D31" width="21.251" height="1.604"/>
+		<rect x="121.028" y="182.138" fill="#F36D31" width="26.164" height="1.604"/>
+		<rect x="119.028" y="183.946" fill="#F36D31" width="30.164" height="1.604"/>
+		<rect x="186.616" y="121.632" fill="#F36D31" width="12" height="63"/>
+	</g>
+</g>
+</svg>

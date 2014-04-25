@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+    
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="../../cloud.webtype.com/css/efb5f05e-7a4e-4abc-9abb-a1672f726ef3.css">
+	<link rel="stylesheet" type="text/css" href="css/eto-timeline.css">
+
+	<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/sugar/1.3/sugar.min.js"></script>
+	<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+	<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/detectmobilebrowser.js"></script>
+	<script type="text/javascript" src="js/etot.js"></script>
+	<script type="text/javascript" src="js/etot.init.js"></script>
+	<script type="text/javascript" src="js/etot.state.js"></script>
+	<script type="text/javascript" src="js/etot.events.js"></script>
+	<script type="text/javascript" src="js/etot.metrics.js"></script>
+
+	<script type="text/javascript">
+	
+		(function() {
+			'use strict';
+			etot.init('#timeline', {
+				mousewheelMultiplier: 17,
+				scrubSlideDurationMs: 800,
+				modalOverlayFadeDurationMs: 500,
+				introThreshold: 5,
+				progressLogLimit: 50,
+				sceneSelector: '.scene',
+				layerSelector: '.layer',
+				controlsSelector: '.controls',
+				scrubberSelector: '.scrubber .background-tile',
+				scrubberHandleSelector: '.handle',
+				scrubberProgressSelector: '.on',
+				noElasticSelector: '#stop-elastic-scrolling',
+				dollarsSavedSelector: '#dollars-saved',
+				energySavedSelector: '#energy-saved',
+				thermsSavedSelector: '#therms-saved',
+				iconStoryButtonSelector: '.lead-in .icons img',
+				iconStorySelector: '.bubble',
+				bigStorySelector: '.big.story .icon, .big.story .label',
+				smallStorySelector: '.scene:not(.lead-in) .bubble',
+				modalOverlaySelector: '#modal-overlay',
+				modalCloseSelector: '.modal-box .close, #modal-overlay',
+				modalSwitchSelector: '.modal-box .also',
+				footerYearsSelector: '.footer .years'
+			});
+		})();
+	
+	</script>
+
+</head>
+
+<body>
+	
+	<div id="stop-elastic-scrolling">
+	
+		<div id="intro">
+			<div class="copy">
+				<img src="" alt="NYU Schools">
+				
+			</div>
+		</div>
+	
+		<div id="timeline" class="viewport" data-origin-x="left" data-origin-y="bottom">
+
+			
+			<div class="footer">
+				<div class="control-bar">
+					
+					<div class="controls">
+						<div class="scrubber">
+							<img class="background-cap left" src="img/scrubber/cap-left.png" alt=""><div class="background-tile"><div class="on"></div><img class="handle" src="img/scrubber/handle.png" alt=""></div><img class="background-cap right" src="img/scrubber/cap-right.png" alt="">
+						</div>
+						<div class="years-container">
+							<div class="years" src="flaticon.svg">Admit</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scene year intro" data-year="2001" data-dollars-saved="0" data-energy-saved="0" data-therms-saved="0">
+				<div class="layer background" data-rate="0.33">
+					<img class="illustration" src="img/scen-intro/background.svg" alt="">
+				</div>
+				<div class="layer foothills" data-rate="0.5">
+					<img class="illustration" src="img/scen-intro/midground2.svg" alt="">
+				</div>
+				<div class="layer midground" data-rate="0.7">
+					<img class="illustration" src="img/scen-intro/midground.svg" alt="">
+					<div id="waves-2001">
+						<img class="wave" src="img/scen-intro/wave-big.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-big.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+						<img class="wave" src="img/scen-intro/wave-small.svg" alt="">
+					</div>
+					<img id="boat" class="animated" src="img/scen-intro/boat.svg" alt="">
+				</div>
+				<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<style>
+
+path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 13px;
+}
+
+</style>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var points = [
+  [00, 200],
+  [2080, 200]
+  
+];
+
+var line = d3.svg.line()
+    .tension(0) // Catmull–Rom
+    .interpolate("cardinal-closed");
+
+var svg = d3.select("body").append("svg")
+    .datum(points)
+    .attr("width", 1060)
+    .attr("height", 500);
+
+svg.append("path")
+    .style("stroke", "#ddd")
+    .style("stroke-dasharray", "4,4")
+    .attr("d", line);
+
+svg.append("path")
+    .attr("d", line)
+    .call(transition);
+
+function transition(path) {
+  path.transition()
+      .duration(15500)
+      .attrTween("stroke-dasharray", tweenDash)
+      .each("end", function() { d3.select(this).call(transition); });
+}
+
+function tweenDash() {
+  var l = this.getTotalLength(),
+      i = d3.interpolateString("0," + l, l + "," + l);
+  return function(t) { return i(t); };
+}
+
+</script>
+				
+				
+				<!--div class="layer foreground" data-rate="1">
+					<img class="illustration" src="img/scen-intro/foreground.svg" alt="">
+					<!--<img src="img/scene-intro/windmill-base.svg" alt="">
+					<img src="img/scene-intro/windmill-base.svg" alt="">
+					<img src="img/scene-intro/windmill-base.svg" alt="">
+					<img class="turbine-blade" src="img/scene-intro/windmill-blades.svg" alt="">
+					<img class="turbine-blade" src="img/scene-intro/windmill-blades.svg" alt="">
+					<img class="turbine-blade" src="img/scene-intro/windmill-blades.svg" alt="">
+				</div>
+				<div class="layer copy" data-rate="0.4">
+					<div class="text">
+						<div class="intro-left" style="display:none">
+							<p>Admissions</p>
+						</div>
+						<div class="intro-right" style="display:none">
+							<p>Admissions</p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		
+		
+	
+	   </body>
+
+
+</html>

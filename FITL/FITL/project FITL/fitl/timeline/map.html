@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body{
+		height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+	  #map-canvas {
+        width: 720px;
+		height: 480px;
+        margin: 10px;
+		margin-right: 10px;
+		padding: 5px;
+		float: left;
+		border-width: 1px;
+		border-color: #7f7f7f;
+		border-style: dotted;
+		border-radius:10px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+	function initialize() {
+	  var myLatlng = new google.maps.LatLng(40.694045,-73.986913);
+	  var mapOptions = {
+		zoom: 13,
+		center: myLatlng
+	  }
+	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h4 id="firstHeading" class="firstHeading">NYU Polytechnic School of Engineering</h4>'+
+      '<div id="bodyContent">'+
+      '<p><b>NYU Poly</b> is a comprehensive school of engineering,'+'<br>'+
+	  'applied sciences, technology and research,'+'<br>'+
+	  'and is rooted in a 158-year tradition of invention,'+'<br>'+ 
+	  'innovation and entrepreneurship: i2e.' +'<br>'+
+      '<p><a href="https://engineering.nyu.edu/>NYU Poly</a></p>'+
+      '</div>'+
+      '</div>';
+	
+	
+		var infowindow = new google.maps.InfoWindow({
+		  content: contentString
+		});
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(40.694045,-73.986913),
+			map: map,
+			title: 'NYU Polytechnic School of Engineering'
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+			map.setZoom(18);
+			map.setCenter(marker.getPosition());
+		});
+		google.maps.event.addListener(infowindow,'closeclick',function(){
+			map.setZoom(14);
+			map.setCenter(new google.maps.LatLng(40.694045,-73.986913));
+		});
+		
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
